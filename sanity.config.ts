@@ -1,4 +1,4 @@
-import { defineConfig, StudioNavbar } from "sanity";
+import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 //import {googleMapsInput} from '@sanity/google-maps-input'
