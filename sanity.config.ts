@@ -6,6 +6,7 @@ import { schemaTypes } from "./schemas";
 import { myTheme } from "./theme";
 import StudioNavbar from "./components/StudioNavbar";
 import Logo from "./components/Logo";
+import { getDefaultDocumentNode } from "./structure";
 
 // const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
 // const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
@@ -21,7 +22,7 @@ export default defineConfig({
   dataset,
 
   plugins: [
-    deskTool(),
+    deskTool({ defaultDocumentNode: getDefaultDocumentNode }),
     visionTool(),
     //googleMapsInput(),
   ],
@@ -32,8 +33,8 @@ export default defineConfig({
   // icon: Logo,
   // logo: Logo,
   // subtitle: "Login to manage the Blog",
-  // title: "PAPAFAM Content Studio",
-  // name: "PAPAFAM_Content_Studio",
+  // title: "Vegan Content Studio",
+  // name: "Vegan_Content_Studio",
   studio: {
     components: {
       logo: Logo,

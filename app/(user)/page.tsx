@@ -5,14 +5,16 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
 
-import { SpeakerWaveIcon } from "@heroicons/react/24/solid"; 
+import { SpeakerWaveIcon } from "@heroicons/react/24/solid";
 const query = groq`
   *[_type=='post'] {
     ...,
     author->,
-    categories[]-> | order(_createdAt desc)
-  } 
+    categories[]-> } | order(_createdAt desc)
+  
 `;
+
+export const revalidate = 60;
 // dash arrow expands
 export default async function HomePage() {
   if (previewData()) {

@@ -9,7 +9,7 @@ function onPublicAccessOnly() {
 
 if (!projectId || !dataset) {
   throw new Error(
-    `MIssing projectId or dataset. Check your sanity.json or .env`
+    `Missing projectId or dataset. Check your sanity.json or .env`
   );
 }
 
