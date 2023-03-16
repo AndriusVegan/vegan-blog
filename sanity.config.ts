@@ -30,9 +30,9 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
-  // icon: Logo,
-  // logo: Logo,
-  // subtitle: "Login to manage the Blog",
+  icon: Logo,
+  logo: Logo,
+  subtitle: "Login to manage the Blog",
   // title: "Vegan Content Studio",
   // name: "Vegan_Content_Studio",
   studio: {

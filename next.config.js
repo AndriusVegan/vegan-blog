@@ -5,6 +5,6 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ["static.vecteezy.com", "cdn.sanity.io"],
+    domains: ["static.vecteezy.com", "cdn.sanity.io", "favicon.ico"],
   },
 };

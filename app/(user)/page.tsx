@@ -22,7 +22,7 @@ export default async function HomePage() {
       <PreviewSuspense
         fallback={
           <div role="status">
-            <p className="text-center text-lg animate-pulse text-[#0af716">
+            <p className="text-center text-lg animate-pulse text-[#0af716]">
               Loading Preview Data...
             </p>
           </div>
@@ -34,6 +34,6 @@ export default async function HomePage() {
   }
 
   const posts = await client.fetch(query);
-  console.log(posts);
+  // console.log(posts);
   return <BlogList posts={posts} />;
 }
