@@ -7,8 +7,8 @@ type Props = {
   posts: Post[];
 };
 
-function BlogList({ posts }: Props) {
-  console.log(posts.length);
+export default function BlogList({ posts }: Props) {
+  // console.log(posts.length);
   return (
     <div>
       <hr className="border-[#40f71b] mb-10" />
@@ -64,7 +64,7 @@ function BlogList({ posts }: Props) {
   );
 }
 
-export default BlogList;
+// export default BlogList;
 
 
 // can be refactored adding post component 
