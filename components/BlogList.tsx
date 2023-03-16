@@ -65,3 +65,6 @@ function BlogList({ posts }: Props) {
 }
 
 export default BlogList;
+
+
+// can be refactored adding post component 

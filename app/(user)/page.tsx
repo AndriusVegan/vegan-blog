@@ -5,7 +5,7 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
 
-import { SpeakerWaveIcon } from "@heroicons/react/24/solid";
+// import { SpeakerWaveIcon } from "@heroicons/react/24/solid";
 const query = groq`
   *[_type=='post'] {
     ...,
@@ -22,7 +22,9 @@ export default async function HomePage() {
       <PreviewSuspense
         fallback={
           <div role="status">
-            <p className="text"> Loading Preview Data...</p>
+            <p className="text-center text-lg animate-pulse text-[#0af716">
+              Loading Preview Data...
+            </p>
           </div>
         }
       >
